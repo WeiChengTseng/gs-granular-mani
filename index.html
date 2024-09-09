@@ -16,9 +16,9 @@
     </script>
 
     <link rel="shortcut icon" href="./assets/favicon.ico">
-    <meta name="description" content="CLA-NeRF: Category-Level Articulated Neural Radiance Field.">
-    <meta name="keywords" content="CLA-NeRF,NeRF,Articulated Pose Estimation,Differentianle,Rendering,Neural">
-    <title>CLA-NeRF</title>
+    <meta name="description" content="Granular Material Manipulation with Gaussian Splatting">
+    <!-- <meta name="keywords" content="CLA-NeRF,NeRF,Articulated Pose Estimation,Differentianle,Rendering,Neural"> -->
+    <title>Granular Material Manipulation with Gaussian Splatting</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -61,7 +61,7 @@
             <h1 style="color:white;margin-bottom:0;">CLA-NeRF</h1>
             <h3 style="color:white;margin-top:0;">Category-Level Articulated Neural Radiance Field</h3>
             <br>
-            <p style="color:white"><a>ICRA 2022</a><br>
+            <p style="color:white"><a>ICRA 2024 Submission</a><br>
                 <a href="https://weichengtseng.github.io/">Wei-Cheng Tseng</a>, <a href="https://hankliao87.github.io/">Hung-Ju Liao</a>, <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, <a href="https://aliensunmin.github.io/">Min Sun</a>
                 <br>
         </div>
@@ -87,15 +87,15 @@
         <div class="row">
             <h2 class="text-center">Overview</h2>
             <hr />
-            <div class="col-sm-12 text-center">
+            <!-- <div class="col-sm-12 text-center">
                 <img src="./assets/teaser.gif" class="img-responsive" style="width:120%" alt="Image">
-            </div>
+            </div> -->
             <div class="container spacing">
             </div>
             <div class="container spacing">
             </div>
             <p>
-                We propose CLA-NeRF -- a Category-Level Articulated Neural Radiance Field that can perform view
+                <!-- We propose CLA-NeRF -- a Category-Level Articulated Neural Radiance Field that can perform view
                 synthesis, part segmentation, and articulated pose estimation. CLA-NeRF is trained at the object
                 category level using no CAD models and no depth, but a set of RGB images with ground truth camera poses
                 and part segments. During inference, it only takes a few RGB views (i.e., few-shot) of an unseen 3D
@@ -106,7 +106,7 @@
                 on both synthetic and real-world data. In all cases, our method shows realistic deformation results and
                 accurate articulated pose estimation. We believe that both few-shot articulated object rendering and
                 articulated pose estimation open doors for robots to perceive and interact with unseen articulated
-                objects.
+                objects. -->
             </p>
         </div>
     </div><br><br>
@@ -116,17 +116,17 @@
     <div class="row">
         <h2 class="text-center">Method</h2>
         <hr />
-        <div class="col-sm-12 text-center">
+        <!-- <div class="col-sm-12 text-center">
             <img src="./assets/overview_v7.png" class="img-responsive" style="width:100%" alt="Image">
-        </div>
+        </div> -->
         <div class="container spacing">
         </div>
         <div class="container spacing">
         </div>
         <p>
-            (a) Our framework retrieves features from two instance as the condition of NeRF model and predicts color <b>c</b>, density <b>&sigma;</b> and segmentation <b>s</b>. The volume rendering is applied to predict rendered results.
+            <!-- (a) Our framework retrieves features from two instance as the condition of NeRF model and predicts color <b>c</b>, density <b>&sigma;</b> and segmentation <b>s</b>. The volume rendering is applied to predict rendered results.
             (b) We calculate the deformation matrix based on the articulated pose. Then, we deform the sampled rays with the deformation matrix. Finally, the deformed visual image is rendered using our learned framework. 
-            (c) The articulated pose is estimated via inversely minimizing <b>L<sub>color</sub></b>.
+            (c) The articulated pose is estimated via inversely minimizing <b>L<sub>color</sub></b>. -->
         </p>
     </div>
 </div><br><br>
@@ -142,9 +142,6 @@
                 <b>Articulated View Systhesis</b>: We directly test our model on real-world images without finetuning.
                 Here, we visulaize novel view synthesis, part segmentation, and deformarion results with predicted joint
                 attributes.
-
-
-                <!-- <b>Deformation </b> We test our model We deform the object with predicted joint information and part segmentation. These results show the objects are deformed consistently for both synthetic and real scenario. -->
             </p>
             <div class="col-sm-12 text-center">
                 <img src="./assets/real_deform_mod.gif" class="img-responsive" style="width:120%" alt="Image">
@@ -199,11 +196,11 @@
             <img class="paper_snapshot" src="./assets/all.png">
             <div class="container spacing">
             </div>
-            <a type="button" class="btn btn-light" href="https://www.youtube.com/watch?v=_AmEgYYnVJA"><i class="fa fa-video-camera"
-                    aria-hidden="true"></i> Video </a>&nbsp
-            <a type="button" class="btn btn-light" href="https://arxiv.org/abs/2202.00181"><i class="fa fa-file-pdf-o"
+            <a type="button" class="btn btn-light" href="#"><i class="fa fa-video-camera"
+                    aria-hidden="true"></i> Video (comming soon) </a>&nbsp
+            <a type="button" class="btn btn-light" href="#"><i class="fa fa-file-pdf-o"
                     aria-hidden="true"></i> Paper </a>&nbsp
-            <a type="button" class="btn btn-light" href="https://github.com/WeiChengTseng/CLA-NeRF"><i
+            <a type="button" class="btn btn-light" href="#"><i
                     class="fa fa-github-alt" aria-hidden="true"></i> Code (comming soon) </a>&nbsp
             <a type="button" class="btn btn-light" href="#"><i class="fa fa-database"></i> Dataset (comming soon)
             </a>&nbsp
@@ -211,50 +208,19 @@
             </div>
             <div class="bitex">
                 <code>
-					&ensp; @inproceedings{icra_tseng,<br />
+					&ensp; @inproceedings{icra_submission_tseng,<br />
 					&ensp; &nbsp &nbsp author = {Wei-Cheng Tseng, Hung-Ju Liao, Lin Yen-Chen, Min Sun},<br />
-					&ensp; &nbsp &nbsp title = {CLA-NeRF: Category-Level Articulated Neural Radiance Field},<br />
-					&ensp; &nbsp &nbsp journal = {ICRA},<br />
-					&ensp; &nbsp &nbsp year = {2022}<br />
+					&ensp; &nbsp &nbsp title = {Granular Material Manipulation with Gaussian Splatting},<br />
+					&ensp; &nbsp &nbsp journal = {...},<br />
+					&ensp; &nbsp &nbsp year = {2024}<br />
 					&ensp; }
 				</code>
             </div>
         </div>
 
-        <!-- <hr />
-        <p>
-            <b>Articulated Pose Estimation </b> We show overlaid images of the rendered and observed images during the optimization of the articulated pose. These examples show that CLA-NeRF is able to recover real setting.
-        </p> -->
     </div><br><br>
 
-    <!-- <div class="container bg-3">
-        <div class="row">
-            <h2 class="text-center">Abstract</h2>
-            <hr />
-        </div>
-        <br>
-        <p>We propose CLA-NeRF - a Category-Level Articulated Neural Radiance Field that can perform view synthesis, part segmentation, and articulated pose estimation. CLA-NeRF is trained at the object category level using no CAD models and no depth, but
-            a set of RGB images with ground truth camera poses and part segments. During inference, it only takes a few RGB views (i.e., few-shot) of an unseen 3D object instance within the known category to infer the object part segmentation and the
-            neural radiance field. Given an articulated pose as input, CLA-NeRF can perform articulation-aware volume rendering to generate the corresponding RGB image at any camera pose. Moreover, the articulated pose of an object can be estimated via
-            inverse rendering. In our experiments, we evaluate the framework across three categories (i.e. laptop, scissors, and eyeglasses) on both synthetic and real-world data. In all cases, our method shows realistic deformation results and accurate
-            articulated pose estimation. We believe that both few-shot articulated object rendering and articulated pose estimation open doors for robots to perceive and interact with unseen articulated objects.
-        </p>
-    </div><br><br> -->
 
-    <!-- <div class="container bg-3">
-        <div class="row">
-            <h2 class="text-center">Method</h2>
-            <hr />
-            <div class="col-sm-10 col-sm-offset-1 text-center">
-                <img src="./assets/overview_v7.png" id="teaser" class="img-responsive" style="width:120%" alt="Image">
-            </div>
-        </div>
-        <br>
-        <p>The overview of our framework. (a) Our framework retrieves features from two instance as the condition of NeRF model and predicts color <b>c</b>, density <math><b>&sigma;</b></math> and segmentation <math><b>s</b></math>. The volume rendering
-            is applied to predict rendered results. (b) We calculate the deformation matrix based on the articulated pose. Then, we deform the sampled rays with the deformation matrix. Finally, the deformed visual image is rendered using our learned framework.
-            (c) The articulated pose is estimated via inversely minimizing <math><b>L<sub>color</sub></b></math>.
-        </p>
-    </div><br><br> -->
 
 
 </body>

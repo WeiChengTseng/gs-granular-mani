@@ -95,18 +95,7 @@
             <div class="container spacing">
             </div>
             <p>
-                <!-- We propose CLA-NeRF -- a Category-Level Articulated Neural Radiance Field that can perform view
-                synthesis, part segmentation, and articulated pose estimation. CLA-NeRF is trained at the object
-                category level using no CAD models and no depth, but a set of RGB images with ground truth camera poses
-                and part segments. During inference, it only takes a few RGB views (i.e., few-shot) of an unseen 3D
-                object instance within the known category to infer the object part segmentation and the neural radiance
-                field. Given an articulated pose as input, CLA-NeRF can perform articulation-aware volume rendering to
-                generate the corresponding RGB image at any camera pose. Moreover, the articulated pose of an object can
-                be estimated via inverse rendering. In our experiments, we evaluate the framework across five categories
-                on both synthetic and real-world data. In all cases, our method shows realistic deformation results and
-                accurate articulated pose estimation. We believe that both few-shot articulated object rendering and
-                articulated pose estimation open doors for robots to perceive and interact with unseen articulated
-                objects. -->
+                Our method takes a few multi-view images of a scene and their corresponding camera poses as input (a) converts them into their Gaussian splatting representation, (b) learns a dynamics model over these representations, and (c) performs visual model-predictive control for granular material manipulation, which requires view synthesis and dynamics rollouts.
             </p>
         </div>
     </div><br><br>
@@ -116,9 +105,9 @@
     <div class="row">
         <h2 class="text-center">Method</h2>
         <hr />
-        <!-- <div class="col-sm-12 text-center">
-            <img src="./assets/overview_v7.png" class="img-responsive" style="width:100%" alt="Image">
-        </div> -->
+        <div class="col-sm-12 text-center">
+            <img src="./assets/overview_v5.png" class="img-responsive" style="width:100%" alt="Image">
+        </div>
         <div class="container spacing">
         </div>
         <div class="container spacing">
@@ -136,7 +125,7 @@
     <div class="container bg-3">
         <br>
         <div class="row">
-            <h2 class="text-center">Real-World Results</h2>
+            <h2 class="text-center">Real-World Manipulation Results</h2>
             <hr />
             <!-- <p>
                 <b>Articulated View Systhesis</b>: We directly test our model on real-world images without finetuning.
@@ -164,7 +153,7 @@
         <br>
 
         <div class="row">
-            <h2 class="text-center">Synthetic Results</h2>
+            <h2 class="text-center">Novel-view Synthesis Results</h2>
             <hr />
             <!-- <p>
                 <b>Articulated View Systhesis</b>: We directly test our model on holdout objects generated with CAD

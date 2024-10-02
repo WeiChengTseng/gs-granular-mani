@@ -116,6 +116,9 @@
             <!-- (a) Our framework retrieves features from two instance as the condition of NeRF model and predicts color <b>c</b>, density <b>&sigma;</b> and segmentation <b>s</b>. The volume rendering is applied to predict rendered results.
             (b) We calculate the deformation matrix based on the articulated pose. Then, we deform the sampled rays with the deformation matrix. Finally, the deformed visual image is rendered using our learned framework. 
             (c) The articulated pose is estimated via inversely minimizing <b>L<sub>color</sub></b>. -->
+            Our method contains the following components.
+            (a) The dynamics model f, conditioned on the input action, predicts the temporal evolution of the scene representation. During planning time, we calculate the task objective and backpropagate the gradients to optimize the action sequence (b) The dynamics model f, conditioned on the input action , predicts the temporal evolution of the scene representation . During planning time, we calculate the task objective and backpropagate the gradients to optimize the action sequence.
+
         </p>
     </div>
 </div><br><br>

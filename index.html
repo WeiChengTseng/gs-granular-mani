@@ -141,11 +141,13 @@
         <div class="row">
             <h2 class="text-center">Novel-view Synthesis Results</h2>
             <hr />
-            <!-- <p>
-                <b>Articulated View Systhesis</b>: We directly test our model on holdout objects generated with CAD
+            <p>
+                <!-- <b>Articulated View Systhesis</b>:  -->
+                <!-- We directly test our model on holdout objects generated with CAD
                 models. Here, we visulaize novel view synthesis, part segmentation, and deformarion results with
-                predicted joint attributes.
-            </p> -->
+                predicted joint attributes. -->
+                Our framework represent the granular material and the scene with Gaussian Splatting, which enables us do novel-view synthesis.
+            </p>
             <div class="col-sm-12 text-center">
                 <img src="./assets/novelview.png" class="img-responsive" style="width:120%" alt="Image">
             </div>
@@ -159,16 +161,21 @@
     </div><br><br>
 
 
-    <div class="container bg-3 text-center">
+    <div class="container bg-3">
         <br>
         <div class="row">
             <h2 class="text-center">Real-World Manipulation Results</h2>
             <hr />
-            <!-- <p>
-                <b>Articulated View Systhesis</b>: We directly test our model on real-world images without finetuning.
+            <p>
+                <!-- <b>Articulated View Systhesis</b>: We directly test our model on real-world images without finetuning.
                 Here, we visulaize novel view synthesis, part segmentation, and deformarion results with predicted joint
-                attributes.
-            </p> -->
+                attributes. -->
+
+                <b>Experimental  Setup</b>: The robotic manipulator, equipped with a pusher at the end-effector, moves object piles within the workspace. Four calibrated RGBD cameras mounted around the workspace provide visual observations of the environment. We show the results of following tasks.
+
+                <b>Splitting</b>: pushing the piles into multiple target regions.
+                <b>Collecting</b>: pushing the piles into a target region.
+            </p>
 
             
         </div>
@@ -210,9 +217,9 @@
             </div>
             <a type="button" class="btn btn-light" href="https://drive.google.com/file/d/1B0z9Md9calQsBvadhwdCKX7udSY7NPEW/view?usp=sharing"><i class="fa fa-video-camera"
                     aria-hidden="true"></i> Video</a>&nbsp
-            <a type="button" class="btn btn-light" href="#"><i class="fa fa-file-pdf-o"
+            <a type="button" class="btn btn-light" href="./assets/paper.pdf"><i class="fa fa-file-pdf-o"
                     aria-hidden="true"></i> Paper </a>&nbsp
-            <a type="button" class="btn btn-light" href="#"><i class="fa fa-file-pdf-o"
+            <a type="button" class="btn btn-light" href="./assets/appendix.pdf"><i class="fa fa-file-pdf-o"
                     aria-hidden="true"></i> Summplmentary </a>&nbsp
             <a type="button" class="btn btn-light" href="#"><i
                     class="fa fa-github-alt" aria-hidden="true"></i> Code (comming soon) </a>&nbsp
